@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA NUDE 暮光研色 ✦ 敏弱肌專屬・原生系簡法美妝官方網站</title>
+  <meta name="description" content="專為敏弱肌與極簡主義者打造的原生感低敏彩妝品牌。養膚級輕薄配方與自然調色技術，讓每位女性展現最真實、有質感的裸肌光采。" />
+  <meta name="keywords" content="AURA NUDE, 暮光研色, 敏弱肌彩妝, 純素美妝, 原生系美學, 水凝霜, 偽素顏底妝, 簡法生活" />
+
+  <!-- Google Fonts: Noto Serif TC, Plus Jakarta Sans, Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600&family=Noto+Serif+TC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" role="complementary" aria-label="優惠公告">
+    <span>✦ 晨光原生裸肌特輯 ✦ 全館消費滿 NT$1,500 即享 <span class="highlight">免運優惠</span> ｜ 首次加入會員領取 <span class="highlight">9折折扣碼</span></span>
+  </aside>
+
+  <!-- Fixed Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="AURA NUDE 暮光研色 首頁">
+        <span class="logo-en">AURA NUDE</span>
+        <span class="logo-zh">暮光研色</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="primary-nav" aria-label="主要選單">
+        <a href="#about" class="nav-link">關於品牌</a>
+        <a href="#products" class="nav-link">熱銷單品</a>
+        <a href="#values" class="nav-link">核心價值</a>
+        <a href="#questions" class="nav-link">品牌四大提問</a>
+        <a href="#reviews" class="nav-link">真實口碑</a>
+        <a href="javascript:void(0)" class="nav-link" onclick="openShadeQuiz()">膚質指南</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Interactive Shade Finder Pill Button -->
+        <button class="quiz-pill-btn" onclick="openShadeQuiz()" aria-label="測驗命定色號">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+          </svg>
+          <span>30秒命定色號</span>
+        </button>
+
+        <!-- Search Icon Button -->
+        <button class="icon-btn" onclick="openSearchModal()" aria-label="搜尋商品">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Shopping Cart Button with Dynamic Badge -->
+        <button class="icon-btn cart-btn" onclick="openCartDrawer()" aria-label="檢視購物車">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" id="cart-badge">1</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="icon-btn mobile-menu-toggle" aria-label="切換行動選單">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (首頁主視覺)
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Left: Content -->
+        <div class="hero-content">
+          <div class="hero-tagline-wrap">
+            <span class="section-tag">Authentic Radiance ✦ 原生系美學</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="quote-en">“You are beautiful just as you are.”</span>
+            <span class="title-zh">展現最真實的裸肌光采</span>
+          </h1>
+
+          <p class="hero-desc">
+            拋開厚重粉感與假面焦慮，讓肌膚在柔和晨曦中自在呼吸。<br />
+            AURA NUDE 專為敏弱肌研製養膚級清透彩妝，以溫暖色調喚醒原生光澤，讓妝容如同第二層細緻肌膚般舒適服貼。
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#products" class="btn-primary">
+              <span>探索原生光采</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <button class="btn-secondary" onclick="openShadeQuiz()">
+              <span>測驗命定色號</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Hero Trust Badges -->
+          <div class="hero-badges">
+            <div class="badge-item">
+              <span class="badge-icon">🌿</span>
+              <span>100% 純素無殘忍</span>
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon">💧</span>
+              <span>85% 植萃保濕精華</span>
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon">🛡️</span>
+              <span>敏弱肌低敏臨床測試</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Visual Image with Floating Card -->
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img 
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=85" 
+              alt="晨光灑落在自然肌膚上的溫暖意境圖 - AURA NUDE 暮光研色" 
+              class="hero-img"
+            />
+          </div>
+
+          <!-- Floating Ambient Card -->
+          <div class="hero-floating-card">
+            <div class="floating-icon">✦</div>
+            <div class="floating-text">
+              <span class="tag">Morning Radiance</span>
+              <span class="desc">晨光微曦特調光影，告別面具感</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Brand Positioning Statement Banner (品牌定位宣言區塊)
+         ========================================================================== -->
+    <section class="brand-manifesto-section" id="about">
+      <div class="container">
+        <div class="manifesto-box">
+          <div class="manifesto-quote-mark">“</div>
+          <blockquote class="manifesto-text">
+            我們是一個專為<strong>敏弱肌與極簡主義者</strong>打造的原生感低敏彩妝品牌，<br class="desktop-only" />
+            透過<strong>養膚級的輕薄配方</strong>與<strong>自然調色技術</strong>，<br class="desktop-only" />
+            讓每位女性都能輕鬆展現最真實、有質感的裸肌光采。
+          </blockquote>
+          <span class="manifesto-author">— AURA NUDE 暮光研色 品牌哲學 —</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Brand Core Values (品牌核心價值 - 4 張互動卡片)
+         ========================================================================== */ -->
+    <section class="values-section" id="values">
+      <div class="container">
+        <div class="values-header">
+          <span class="section-tag">Core Values ✦ 品牌理念</span>
+          <h2 class="section-title">重塑美妝本質的原生堅持</h2>
+          <p class="section-subtitle">我們相信最動人的妝容，不是掩飾缺點，而是讓原生的肌膚透出健康柔和的光芒。</p>
+        </div>
+
+        <div class="values-grid">
+          <!-- Card 1 -->
+          <article class="value-card" tabindex="0">
+            <div class="value-card-header">
+              <span class="value-number">01</span>
+              <div class="value-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="value-title">真實自在</h3>
+            <span class="value-subtitle">Authentic Radiance</span>
+            <p class="value-desc">
+              擁抱天生肌膚紋理與微小特色，不追求刻意的厚重遮蓋。在柔焦微光中，呈現從容自如的自信氣場。
+            </p>
+            <div class="value-points">
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>不卡粉、不假面的輕透妝效</span>
+              </div>
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>保有自然呼吸感的柔霧光澤</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="value-card" tabindex="0">
+            <div class="value-card-header">
+              <span class="value-number">02</span>
+              <div class="value-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="value-title">低敏溫和</h3>
+            <span class="value-subtitle">Gentle & Vegan</span>
+            <p class="value-desc">
+              100% 純素無動物殘忍。堅持 0% 酒精、人工香精、礦物油與刺激性防腐劑，通過敏弱肌雙重臨床安心測試。
+            </p>
+            <div class="value-points">
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>通過皮膚科醫師低敏耐受測試</span>
+              </div>
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>純素認證・零動物實驗</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="value-card" tabindex="0">
+            <div class="value-card-header">
+              <span class="value-number">03</span>
+              <div class="value-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="value-title">簡法生活</h3>
+            <span class="value-subtitle">Mindful Minimalism</span>
+            <p class="value-desc">
+              精簡繁瑣的化妝步驟。智慧多效調色配方，3 分鐘即可完成晨光妝容，把早晨寶貴時間留給一杯醇厚的咖啡與自己。
+            </p>
+            <div class="value-points">
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>多效合一，省時無負擔</span>
+              </div>
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>極簡包裝，告別繁複瓶罐</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="value-card" tabindex="0">
+            <div class="value-card-header">
+              <span class="value-number">04</span>
+              <div class="value-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="value-title">高效美學</h3>
+            <span class="value-subtitle">Skincare Infused</span>
+            <p class="value-desc">
+              彩妝即是頂級保養的延伸。大量注入積雪草、角鯊烷與植物玻尿酸，在潤色修飾的同時，持續修護肌膚屏障。
+            </p>
+            <div class="value-points">
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>85% 保養精華基底添加</span>
+              </div>
+              <div class="value-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>卸妝後依然潤澤透亮不乾澀</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Star Products Showcase (明星商品展示區 - 4 款核心產品)
+         ========================================================================== -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="products-header-wrap">
+          <div>
+            <span class="section-tag">Best Sellers ✦ 明星單品</span>
+            <h2 class="section-title">晨光調色系列・4 款核心單品</h2>
+            <p class="section-subtitle" style="margin-bottom:0;">專為亞洲敏弱肌膚質調製，輕盈無負擔，營造天生般的微光感。</p>
+          </div>
+
+          <!-- Product Filter Tabs -->
+          <div class="products-filter-pills" role="tablist" aria-label="商品分類">
+            <button class="filter-pill active" onclick="filterProducts('all', this)" role="tab">全部明星品 (4)</button>
+            <button class="filter-pill" onclick="filterProducts('base', this)" role="tab">底妝修飾</button>
+            <button class="filter-pill" onclick="filterProducts('lip', this)" role="tab">純素唇彩</button>
+            <button class="filter-pill" onclick="filterProducts('cheek', this)" role="tab">水感頰彩</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid rendered by js/app.js -->
+        <div class="products-grid" id="products-grid-container">
+          <!-- Fallback Server-rendered Products for SEO -->
+          <div class="product-card" data-prod-id="prod-water-cream">
+            <div class="product-badge-wrap"><span class="product-tag">熱銷 No.1 明星小奶瓶</span></div>
+            <div class="product-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="暮光修飾水凝霜（SPF30 PA+++）" />
+            </div>
+            <div class="product-details">
+              <div class="product-rating"><span class="stars">★★★★★</span><span>4.9</span><span class="review-count">(528)</span></div>
+              <h3 class="product-name">暮光修飾水凝霜（SPF30 PA+++）</h3>
+              <p class="product-subtitle">輕盈水感質地，融膚即現溫潤微光澤。添加 85% 養膚水感精華...</p>
+              <div class="product-footer-row">
+                <span class="product-price">NT$ 1,280</span>
+                <button class="btn-add-cart" onclick="quickAddToCart('prod-water-cream')">加入購物車</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Brand 4-Questions Interactive Section (品牌四大提問互動區塊)
+         ========================================================================== -->
+    <section class="questions-section" id="questions">
+      <div class="container">
+        <div class="questions-header">
+          <span class="section-tag">Brand Philosophy ✦ 四大提問</span>
+          <h2 class="section-title">深入了解 AURA NUDE 暮光研色</h2>
+          <p class="section-subtitle">我們從肌膚最真實的需求出發，回應每位極簡愛美者的核心疑惑。</p>
+        </div>
+
+        <div class="questions-interactive-box">
+          <!-- Left: Nav Tabs -->
+          <div class="questions-nav" role="tablist" aria-label="四大提問導覽">
+            <button class="q-tab-btn active" data-target="pane-who" role="tab" aria-selected="true">
+              <span class="q-badge">WHO</span>
+              <div class="q-tab-text">
+                <span class="q-tab-title">適合誰？</span>
+                <span class="q-tab-sub">敏弱肌與極簡主義者</span>
+              </div>
+            </button>
+
+            <button class="q-tab-btn" data-target="pane-what" role="tab" aria-selected="false">
+              <span class="q-badge">WHAT</span>
+              <div class="q-tab-text">
+                <span class="q-tab-title">提供什麼？</span>
+                <span class="q-tab-sub">養膚級輕薄彩妝與偽素顏</span>
+              </div>
+            </button>
+
+            <button class="q-tab-btn" data-target="pane-why" role="tab" aria-selected="false">
+              <span class="q-badge">WHY</span>
+              <div class="q-tab-text">
+                <span class="q-tab-title">為什麼需要？</span>
+                <span class="q-tab-sub">告別厚重焦慮，如保養般舒適</span>
+              </div>
+            </button>
+
+            <button class="q-tab-btn" data-target="pane-how" role="tab" aria-selected="false">
+              <span class="q-badge">HOW</span>
+              <div class="q-tab-text">
+                <span class="q-tab-title">如何互動？</span>
+                <span class="q-tab-sub">無濾鏡社群與專業膚質建議</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Right: Detailed Content Panes -->
+          <div class="questions-content-pane">
+            <!-- Pane 1: WHO -->
+            <div class="q-pane active" id="pane-who" role="tabpanel">
+              <div class="q-pane-label">✦ TARGET AUDIENCE</div>
+              <h3 class="q-pane-title">專為敏弱肌與追求高效簡約的現代女性設計</h3>
+              <p class="q-pane-desc">
+                妳是否也曾因底妝悶厚而冒痘、換季時泛紅脫屑不敢化妝？AURA NUDE 專為容易敏感、追求效率且重視成分安全的妳而誕生。不論是上班族早晨 3 分鐘快速出門，或是崇尚原生質感的偽素顏愛好者，都能在這裡找到最輕盈的陪伴。
+              </p>
+              <div class="q-pane-highlights">
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>換季乾癢泛紅族群：</strong> 物理舒緩配方，上妝即是建立溫和防禦屏障。</span>
+                </div>
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>極簡日常通勤者：</strong> 捨去層層打底，一瓶均勻膚色與防曬防護。</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 2: WHAT -->
+            <div class="q-pane" id="pane-what" role="tabpanel">
+              <div class="q-pane-label">✦ OUR OFFERING</div>
+              <h3 class="q-pane-title">養膚級輕薄彩妝與宛如天生的好氣色</h3>
+              <p class="q-pane-desc">
+                我們提供融合了高濃度護膚精萃（積雪草、角鯊烷、有機植物油）與微晶礦物色粉的純淨彩妝系列。質地如水精華般滑順，修飾暗沉泛紅的同時，維持全天候透氣光澤，真正做到「卸妝後肌膚依舊細膩透亮」。
+              </p>
+              <div class="q-pane-highlights">
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>微光水凝霜：</strong> 專利微囊破水技術，上臉即化為透光保護膜。</span>
+                </div>
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>純素護唇釉：</strong> 天然植萃調色，告別色素沉澱與乾燥脫皮。</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 3: WHY -->
+            <div class="q-pane" id="pane-why" role="tabpanel">
+              <div class="q-pane-label">✦ THE REASON</div>
+              <h3 class="q-pane-title">告別厚重遮瑕焦慮，讓化妝像晨間保養一樣舒適</h3>
+              <p class="q-pane-desc">
+                傳統底妝往往以高粉量掩蓋肌膚紋理，反而容易造成毛孔阻塞與假面尷尬。AURA NUDE 相信，真正的美在於健康自信的肌膚光澤。我們用光影折射柔焦毛孔，取代厚粉堆疊，讓化妝不再是焦慮的遮掩，而是愛護自己的日常儀式。
+              </p>
+              <div class="q-pane-highlights">
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>解放毛孔負擔：</strong> 0% 致粉刺成分，整日帶妝依然輕盈透氣。</span>
+                </div>
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>溫和好卸除：</strong> 溫水搭配一般溫和洗面乳即可輕鬆洗淨，不傷角質層。</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pane 4: HOW -->
+            <div class="q-pane" id="pane-how" role="tabpanel">
+              <div class="q-pane-label">✦ INTERACTION & COMMUNITY</div>
+              <h3 class="q-pane-title">溫暖、無濾鏡的真實社群交流與專業膚質建議</h3>
+              <p class="q-pane-desc">
+                我們拒絕過度修圖與不切實際的宣傳。在 AURA NUDE，所有照片均展現真實肌膚紋理。我們提供線上 1 對 1 膚質色號諮詢、敏弱肌上妝技巧指南，以及一個互相信任、讚頌自然之美的真實女性社群。
+              </p>
+              <div class="q-pane-highlights">
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>1對1 線上調色諮詢：</strong> 專業美妝顧問協助精準挑選色號。</span>
+                </div>
+                <div class="q-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>#AuraInRealLife 社群活動：</strong> 分享無濾鏡日常光采，共創原生美學。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Customer Real Feedback / Social Proof (顧客真實回饋)
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="reviews-header-wrap">
+          <span class="section-tag">Real Stories ✦ 無濾鏡口碑</span>
+          <h2 class="section-title">看見肌膚真實呼吸的光采</h2>
+          <p class="section-subtitle">來自 1,500+ 位敏弱肌與極簡日常實測的 5 星回饋，無修圖、無濾鏡呈現。</p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review Card 1 -->
+          <article class="review-card">
+            <div class="review-photo-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" 
+                alt="真實顧客妝容照片 - 敏弱混合肌實測" 
+                loading="lazy" 
+              />
+              <span class="review-pill-tag">泛紅敏弱肌友善</span>
+            </div>
+            <div class="review-body">
+              <div class="review-rating-row">
+                <span class="review-stars">★★★★★</span>
+                <span class="verified-badge">✓ 已驗證購買</span>
+              </div>
+              <p class="review-text">
+                「換季臉頰很容易泛紅起屑，以前上粉底總是大崩潰卡粉。用了暮光水凝霜後驚為天人！質地就像擦精華乳一樣水潤，薄薄一層泛紅直接消失，整天待在冷氣房完全不乾澀，朋友都問我是不是膚質變好了！」
+              </p>
+              <div class="review-author-wrap">
+                <div class="author-meta">
+                  <span class="author-name">陳若晴 Emma</span>
+                  <div class="skin-type">膚質：混合偏乾 / 換季泛紅</div>
+                </div>
+                <a href="#products" class="purchased-prod-link">暮光水凝霜 #02</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review Card 2 -->
+          <article class="review-card">
+            <div class="review-photo-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" 
+                alt="真實顧客妝容照片 - 極簡上班族日常" 
+                loading="lazy" 
+              />
+              <span class="review-pill-tag">3分鐘快速晨妝</span>
+            </div>
+            <div class="review-body">
+              <div class="review-rating-row">
+                <span class="review-stars">★★★★★</span>
+                <span class="verified-badge">✓ 已驗證購買</span>
+              </div>
+              <p class="review-text">
+                「身為每天需要趕捷運的上班族，這罐水凝霜搭配腮紅膏簡直是神仙組合！用手指隨便抹都很均勻，微光澤感很高級，不會有油光感。最棒的是純素低敏配方，連續帶妝一週毛孔依然很乾淨沒長粉刺！」
+              </p>
+              <div class="review-author-wrap">
+                <div class="author-meta">
+                  <span class="author-name">林蔚欣 Sabrina</span>
+                  <div class="skin-type">膚質：中性偏油 / 極簡生活實踐者</div>
+                </div>
+                <a href="#products" class="purchased-prod-link">腮紅膏 #B01 + 水凝霜</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review Card 3 -->
+          <article class="review-card">
+            <div class="review-photo-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80" 
+                alt="真實顧客妝容照片 - 眼周黑眼圈修飾實測" 
+                loading="lazy" 
+              />
+              <span class="review-pill-tag">眼周乾肌救星</span>
+            </div>
+            <div class="review-body">
+              <div class="review-rating-row">
+                <span class="review-stars">★★★★★</span>
+                <span class="verified-badge">✓ 已驗證購買</span>
+              </div>
+              <p class="review-text">
+                「重度黑眼圈＋眼下極乾的苦主，這盤三色遮瑕盤真的必須大推。膏體融化在指尖上的質地非常絲滑，校色蜜桃色遮黑眼圈超自然，到下午都不會裂開積線，卸妝時也很溫和不熏眼，一定會無限次回購！」
+              </p>
+              <div class="review-author-wrap">
+                <div class="author-meta">
+                  <span class="author-name">黃子庭 Amber</span>
+                  <div class="skin-type">膚質：全臉乾性 / 眼周易卡紋</div>
+                </div>
+                <a href="#products" class="purchased-prod-link">微光柔霧遮瑕盤</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Interactive Modals: Shade Finder Quiz (30秒命定色號測驗)
+       ========================================================================== -->
+  <div class="modal-overlay" id="quiz-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="quiz-modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeShadeQuiz()" aria-label="關閉測驗">✕</button>
+      
+      <div class="quiz-header">
+        <span class="section-tag">Shade Finder Quiz</span>
+        <h3 class="quiz-title" id="quiz-modal-title">30 秒尋找您的專屬原生光采</h3>
+        <p class="quiz-step-desc">回答 2 個膚況問題，精準推薦最適合您的低敏調色底妝與色號</p>
+      </div>
+
+      <!-- Step 1: Skin Type -->
+      <div class="quiz-step active" id="quiz-step-1">
+        <h4 class="quiz-question-title">1. 您目前的膚質與換季狀態？</h4>
+        <div class="quiz-options-grid">
+          <div class="quiz-option-card" onclick="selectQuizOption('skinType', 'sensitive', 2)">
+            <div>
+              <div class="opt-title">敏弱肌 / 易泛紅脫屑</div>
+              <div class="opt-desc">換季易泛紅，需要高保濕與溫和物理舒緩配方</div>
+            </div>
+            <span>→</span>
+          </div>
+          <div class="quiz-option-card" onclick="selectQuizOption('skinType', 'dry', 2)">
+            <div>
+              <div class="opt-title">乾性至中性肌膚</div>
+              <div class="opt-desc">容易暗沉缺乏光澤，追求如晨露般的水潤飽滿感</div>
+            </div>
+            <span>→</span>
+          </div>
+          <div class="quiz-option-card" onclick="selectQuizOption('skinType', 'combo', 2)">
+            <div>
+              <div class="opt-title">混合性 / T字易出油</div>
+              <div class="opt-desc">希望輕透無油感，告別毛孔悶痘負擔</div>
+            </div>
+            <span>→</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Undertone -->
+      <div class="quiz-step" id="quiz-step-2">
+        <h4 class="quiz-question-title">2. 觀察手腕血管顏色或日常底妝偏好：</h4>
+        <div class="quiz-options-grid">
+          <div class="quiz-option-card" onclick="selectQuizOption('undertone', 'fair', 'result')">
+            <div>
+              <div class="opt-title">血管偏藍紫色 ✦ 冷調白皙</div>
+              <div class="opt-desc">曬太陽容易泛紅、不易曬黑，喜愛粉嫩明亮光采</div>
+            </div>
+            <span>✦</span>
+          </div>
+          <div class="quiz-option-card" onclick="selectQuizOption('undertone', 'natural', 'result')">
+            <div>
+              <div class="opt-title">血管藍綠相間 ✦ 中性自然色調</div>
+              <div class="opt-desc">大多數亞洲自然膚色，喜愛融合原生肌底的健康柔光</div>
+            </div>
+            <span>✦</span>
+          </div>
+          <div class="quiz-option-card" onclick="selectQuizOption('undertone', 'warm', 'result')">
+            <div>
+              <div class="opt-title">血管偏橄欖綠 ✦ 暖調健康色</div>
+              <div class="opt-desc">曬太陽易均勻曬成小麥色，喜愛陽光般暖煦微光</div>
+            </div>
+            <span>✦</span>
+          </div>
+        </div>
+        <div class="quiz-nav-row">
+          <button class="btn-secondary" onclick="showQuizStep(1)" style="padding:8px 18px; font-size:0.85rem;">← 上一步</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Result -->
+      <div class="quiz-step" id="quiz-step-result">
+        <div id="quiz-result-content">
+          <!-- Dynamically filled by js/app.js -->
+        </div>
+        <div style="text-align:center;">
+          <button class="btn-secondary" onclick="showQuizStep(1)" style="font-size:0.85rem; padding:8px 20px;">重新測驗 ↺</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Product Quick View Modal (快速預覽彈窗)
+       ========================================================================== -->
+  <div class="modal-overlay" id="quickview-modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container quickview-container">
+      <button class="modal-close-btn" onclick="closeQuickView()" aria-label="關閉預覽">✕</button>
+      <div id="quickview-modal-content">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Slide-Out Shopping Cart Drawer (側邊購物車抽屜)
+       ========================================================================== -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="購物袋">
+      <div class="cart-header">
+        <h3 class="cart-header-title">您的購物袋</h3>
+        <button class="icon-btn" onclick="closeCartDrawer()" aria-label="關閉購物車">✕</button>
+      </div>
+
+      <!-- Free Shipping Progress Indicator -->
+      <div class="shipping-progress-box">
+        <div class="shipping-status-text" id="shipping-status-msg">
+          <span>滿 NT$ 1,500 即享全館免運</span>
+          <span>0%</span>
+        </div>
+        <div class="shipping-bar-bg">
+          <div class="shipping-bar-fill" id="shipping-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items List Container -->
+      <div class="cart-items-wrap" id="cart-items-container">
+        <!-- Rendered by js/app.js -->
+      </div>
+
+      <!-- Cart Drawer Footer -->
+      <div class="cart-footer">
+        <!-- Coupon Code Input -->
+        <div class="cart-coupon-row">
+          <input type="text" class="coupon-input" id="coupon-code-input" placeholder="輸入折扣碼（如 AURANEW10）" />
+          <button class="coupon-apply-btn" onclick="applyCoupon()">套用</button>
+        </div>
+
+        <div class="cart-summary-line">
+          <span>商品小計</span>
+          <span id="cart-subtotal">NT$ 1,280</span>
+        </div>
+
+        <div class="cart-summary-line" id="cart-discount-row" style="display:none; color:#5B8C67;">
+          <span>折扣折抵</span>
+          <span id="cart-discount-val">- NT$ 0</span>
+        </div>
+
+        <div class="cart-summary-line">
+          <span>預估運費</span>
+          <span>結帳步驟計算（滿額享免運）</span>
+        </div>
+
+        <div class="cart-summary-line total">
+          <span>應付總額</span>
+          <span id="cart-total">NT$ 1,280</span>
+        </div>
+
+        <button class="btn-checkout" onclick="checkoutOrder()">
+          <span>前往結帳</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Toast Notification Bubble -->
+  <div class="toast-notice" id="toast-notice" role="alert" aria-live="polite">
+    <span class="toast-icon">✦</span>
+    <span id="toast-message">商品已加入購物袋！</span>
+  </div>
+
+  <!-- ==========================================================================
+       Footer (頁尾)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Sustainability Commitment Banner -->
+      <div class="sustainability-banner">
+        <div class="sus-item">
+          <span class="sus-icon">🌱</span>
+          <div class="sus-text">
+            <span class="title">100% 純素無動物殘忍</span>
+            <span class="subtitle">通過零殘忍純素認證，拒絕任何動物實驗</span>
+          </div>
+        </div>
+        <div class="sus-item">
+          <span class="sus-icon">♻️</span>
+          <div class="sus-text">
+            <span class="title">可回收玻璃與 FSC 認證紙材</span>
+            <span class="subtitle">大豆油墨印刷，為地球減輕包裝負擔</span>
+          </div>
+        </div>
+        <div class="sus-item">
+          <span class="sus-icon">🛡️</span>
+          <div class="sus-text">
+            <span class="title">敏感肌雙重臨床耐受測試</span>
+            <span class="subtitle">無酒精、無礦物油、無人工色素與香料</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer Columns -->
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo-footer">AURA NUDE</div>
+          <div class="footer-sublogo">暮光研色 ✦ AUTHENTIC RADIANCE</div>
+          <p class="brand-bio">
+            專為敏弱肌與極簡主義者打造的原生感低敏彩妝品牌。以晨光柔和特調與養膚植萃，重塑每日安心的純淨妝容。
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="追蹤我們的 Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="追蹤我們的 TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="觀看 YouTube 原生妝容教學">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title">品牌探索</h4>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">關於品牌理念</a></li>
+            <li><a href="#products" class="footer-link">明星調色單品</a></li>
+            <li><a href="#values" class="footer-link">敏弱肌純素承諾</a></li>
+            <li><a href="#questions" class="footer-link">品牌四大核心提問</a></li>
+            <li><a href="javascript:void(0)" onclick="openShadeQuiz()" class="footer-link">線上 30 秒膚質指南</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care -->
+        <div>
+          <h4 class="footer-col-title">顧客服務</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="showToast('配送須知：全館滿 $1500 免運，3個工作天內配達')" class="footer-link">配送與物流進度</a></li>
+            <li><a href="javascript:void(0)" onclick="showToast('安心退換保證：未開封商品享7天鑑賞期')" class="footer-link">7日鑑賞與安心退換</a></li>
+            <li><a href="javascript:void(0)" onclick="showToast('客服信箱：care@auranude.com')" class="footer-link">1對1 色號諮詢專線</a></li>
+            <li><a href="javascript:void(0)" onclick="showToast('隱私權聲明：本站全面採用 SSL 256 位元加密保護')" class="footer-link">隱私條款與資料安全</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div>
+          <div class="newsletter-card">
+            <h4 class="footer-col-title" style="margin-bottom:10px;">訂閱即享首購 9 折優惠</h4>
+            <p class="newsletter-desc">
+              加入 AURA 暮光社群，第一時間獲取新季調色靈感、敏弱肌護膚指南與<strong>首購專屬折扣碼</strong>。
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input 
+                type="email" 
+                class="newsletter-input" 
+                id="newsletter-email" 
+                placeholder="輸入您的電子郵件信箱" 
+                required 
+                aria-label="電子郵件"
+              />
+              <button type="submit" class="btn-newsletter">領取 9 折</button>
+            </form>
+            <span class="newsletter-hint">✦ 訂閱後隨時可取消，我們用心保護您的個人隱私</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Row -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 AURA NUDE 暮光研色. All rights reserved. 依據原生美學打造・台灣原創純素敏弱彩妝品牌
+        </div>
+        <div style="display:flex; gap:20px;">
+          <span>隱私條款 Privacy</span>
+          <span>服務條款 Terms</span>
+          <span>永續綠色報告 2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
